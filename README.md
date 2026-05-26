@@ -1,69 +1,78 @@
-# yilanOyunu
-# 🎮 Joystick Kontrollü Yılan Oyunu
+# Snake Game with Arduino Joystick
 
-Bu proje, **Arduino** ve **Pygame** kullanılarak geliştirilen joystick kontrollü klasik bir *Snake (Yılan)* oyunudur. Oyuncu, fiziksel bir **joystick modülü** üzerinden yılanı yönlendirerek ekran üzerinde yemleri toplamaya çalışır.
+A Python and Arduino integrated snake game controlled using a physical joystick module.
 
-## 🧠 Proje Amacı
+This project combines embedded systems, serial communication and game development concepts using Arduino, Python and Pygame.
 
-Bu proje, **gömülü sistemler** ve **Python ile oyun programlama** alanında öğrenme ve uygulama amaçlı geliştirilmiştir. Arduino ile joystick'ten veri okunup, bu veriler Python’daki Pygame kütüphanesi kullanılarak işlenmiştir.
+---
 
-## 🛠️ Kullanılan Teknolojiler
+## 🚀 Features
 
-- Arduino UNO
-- Joystick modülü
-- USB Seri Haberleşme
-- Python 3.x
-- [Pygame](https://www.pygame.org/)
-- Arduino IDE
-- VS Code
+- Arduino joystick-controlled gameplay
+- Real-time serial communication
+- Pygame-based graphical interface
+- Embedded hardware interaction
+- Keyboard-independent control system
+- Smooth directional movement system
 
-## 📦 Donanım Gereksinimleri
+---
 
-- Arduino UNO
-- Joystick Shield (veya ayrı joystick modülü)
-- USB kablosu
-- Bilgisayar
+## 🛠️ Technologies Used
 
-## ⚙️ Kurulum ve Çalıştırma
+- Python
+- Pygame
+- Arduino
+- Serial Communication
+- Embedded Systems
 
-### Arduino Tarafı
+---
 
-1. Arduino IDE’yi aç.
-2. `yilanOyunuIde.ino` dosyasını yükle.
-3. Arduino'ya uygun portu seç ve kodu yükle.
+## 🎮 How It Works
 
-### Python Tarafı
+The Arduino reads joystick input values and sends directional commands to the Python application through serial communication.
 
-1. Python 3 yüklü değilse indir: https://www.python.org/
-2. Gerekli kütüphaneleri yükle:
-   ```bash
-   pip install pygame pyserial
-snake_game.py dosyasını çalıştır:
+The Python application processes these commands and controls the snake movement inside the game environment.
 
-'''bash
+---
 
-            python yilanOyunu.py
-🎮 Oyun Kontrolleri
-Joystick konumlarına göre yılan şu şekilde hareket eder:
+## 📁 Project Structure
 
-Yukarı: Y > 600
+```text
+snake-game-with-arduino-joystick/
+├── yilanOyunu.py
+├── yilanOyunulde.ino
+└── README.md
+```
 
-Aşağı: Y < 100
+---
 
-Sağ: X > 600
+## 🔌 Hardware Components
 
-Sol: X < 100
+- Arduino UNO / Nano
+- Joystick Module
+- USB Serial Communication
 
-Joystick'in orta değeri yaklaşık olarak (318, 326)'dır. Bu değer etrafındaki küçük sapmalar hareket olarak algılanmaz.
+---
 
+## 🧠 Concepts Practiced
 
-👨‍💻 Geliştirici
-Ad Soyad: Merve Karagülle
+- Embedded systems integration
+- Python game development
+- Serial communication
+- Real-time input processing
+- Hardware-software interaction
 
-GitHub: @merve-karagulle
+---
 
-Üniversite: Fırat Üniversitesi, Yazılım Mühendisliği
+## 👩‍💻 Developer
 
-📝 Lisans
+Merve Karagülle  
+Software Engineering Student | Robotics & Embedded Systems Enthusiast
 
-Bu proje MIT lisansı ile lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına göz atabilirsiniz.
+---
+
+## 🔗 Links
+
+- GitHub Profile: https://github.com/merve-karagulle
+- Portfolio Website: https://personal-portfolio-website-rust-iota.vercel.app/
+- LinkedIn: https://www.linkedin.com/in/merve-karag%C3%BClle-yazilim/
